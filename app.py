@@ -30,7 +30,7 @@ def splitter(pages):
 
 def embedding_and_vectorStore(docs):
     embeddings_model = CohereEmbeddings(
-        cohere_api_key="F7GNzmzejOfIopMrk58IQjKwlQEESuLYxqFqBDVQ"
+        cohere_api_key="Your_API_Key"
     )
     persist_directory = "./chroma"
     vectordb = Chroma.from_documents(
@@ -53,7 +53,7 @@ def llm():
     llm_i = HuggingFaceHub(
         repo_id="facebook/bart-large-cnn",
         model_kwargs={"temperature": 0, "max_length": 180},
-        huggingfacehub_api_token="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",
+        huggingfacehub_api_token="Your_API_Token",
     )
     return llm_i
 
