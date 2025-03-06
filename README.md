@@ -1,1 +1,1 @@
-This is research paper summerization program using Langchain.
+This Streamlit-powered PDF summarizer automatically extracts and splits text from uploaded PDFs, generates embeddings with Cohere and Chroma, and then leverages a HuggingFace BART model with a custom prompt to produce a concise, human-readable summary—all in an interactive web interface.
